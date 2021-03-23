@@ -5,6 +5,9 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.Positive;
+
+import academy.digitallap.store.serviceshopping.model.Product;
+
 import java.io.Serializable;
 
 @Entity
@@ -39,4 +42,10 @@ public class InvoiceItem  {
         this.price=(double) 0;
 
     }
+    
+    /**
+     * 
+     */
+    @Transient
+    private Product product;
 }

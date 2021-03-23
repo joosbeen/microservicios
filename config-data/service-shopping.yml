@@ -41,3 +41,13 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
 
+# activar hystrix
+feign:
+  hystrix:
+    enabled: true
+# activar actuation
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
