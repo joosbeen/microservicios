@@ -45,7 +45,7 @@ eureka:
 feign:
   hystrix:
     enabled: true
-# activar actuation
+# activar actuatior endpoints
 management:
   endpoints:
     web:
